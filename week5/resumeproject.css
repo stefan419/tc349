@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+
+p { font-family: "Helvetica", sans-serif;
+	
+}
+
+h1 { font-family: "Helvetica", sans-serif;
+margin: 0em auto;
+}
+
+h2 { font-family: "Helvetica", sans-serif;
+
+}
+
+ul {font-family: "Helvetica", sans-serif;
+	
+}
+
+body { margin: auto;
+	background-color:#FFCC99
+}
