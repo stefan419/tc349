@@ -1,0 +1,768 @@
+@charset "utf-8";	
+	/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+header {
+	background-color: #DBA595;
+	color: #95CBDB;
+	font-family: "Source Code Pro", "Helvetica", sans-serif;
+	width: 100%;
+	height: 90px;
+	padding-top: -5px;
+	transition: .3s;
+	z-index: 100;
+	position: fixed;
+	top:0px;
+}
+#nav {
+	margin: 36px 0 0 400px;
+	position: fixed;
+}
+#nav a {
+	text-decoration: none;
+	color: #95CBDB;
+}
+#nav a:hover {
+	color: #DBA595;
+	transition-duration: .3s;
+}
+#nav li:hover {
+	background: #95CBDB;
+	transition-duration: .3s;
+}
+#nav li {
+	text-decoration: none;
+	display: inline;
+	font-size: 26px;
+	text-align: right;
+	padding: 0px 15px 0px 15px;	
+}
+
+header p {
+	margin: 70px 0 0 180px;
+	float: left;
+	postition: fixed;
+	
+}
+header h1 {
+	display: inline;
+	font-size: 40px;
+	padding-top: 0px;
+	margin-left: 0px;
+	position: fixed;
+	top: 0px;
+	left: 10px;
+}
+
+#logo {
+	margin:0px;
+	padding: 0px;
+	top: 0px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	
+}
+	
+body {
+	left: 0;
+	margin: 0px 0px 0px 0px;
+	padding: 0;
+	width: 100%;
+}
+#donuts {
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	top:0;
+
+}
+#donuts2 {
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	top:0;
+	
+}
+#DillaDescription {
+	position: absolute;
+	top: 180px;
+	right: 10px;
+	width:30%;
+	color:#FFF;
+	font-family: sans-serif;	
+}
+#DillaDescriptionIndex {
+	position: absolute;
+	top: 230px;
+	right: 10px;
+	width:30%;
+	color:#FFF;
+	font-family: sans-serif;	
+}
+#DillaDescription p {
+	font-size: 20px;
+}
+#DillaDescriptionIndex p {
+	font-size: 20px;
+}
+#ShigetoDesc {
+	float:right;
+	width: 38%;
+	font-family: "Source Code Pro", "helvetica", sans-serif;
+}
+#ShigetoDesc h2 {
+	text-shadow: 2px 2px #DBA595;
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+#ShigetoDesc p {
+	text-shadow: 2px 2px #95CBDB;	
+}
+#MegablownDesc {
+	position: relative;
+	width: 38%;
+	float: right;
+	font-family: "OCR A Std", "Plantagenet Cherokee", "Poplar Std", SimSun, ZWAdobeF
+}
+#MegablownDesc h2 {
+	padding: 0px;
+	margin: 0px;
+	text-shadow: 2px 2px #95CBDB;
+}
+#MegablownDesc p {
+	font-size: 19px;
+	padding: 0px;
+	margin: 0px;
+	text-shadow: 2px 2px #DBA595;
+}
+#joonthemonsoonDesc {
+	position: relative;
+	width: 38%;
+	float: right;
+	font-family: "Plantagenet Cherokee", "Poplar Std", SimSun, ZWAdobeF;
+}
+#joonthemonsoonDesc h2 {
+	font-size: 24px;
+	padding: 10px 0 0 0;
+	margin: 0px;
+	text-shadow: 4px 0px #95CBDB;
+}
+#joonthemonsoonDesc p {
+	font-size: 19px;
+	padding: 0px;
+	margin: 0px;
+	text-shadow: 0px 50px #DBA595;
+}
+#ChromeSparksDesc {
+	position: relative;
+	width: 38%;
+	float: right;
+	font-family: SimSun, ZWAdobeF;
+}
+#ChromeSparksDesc h2 {
+	font-size: 30px;
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+#RyanYunckDesc {
+	position: relative;
+	width: 40%;
+	float: right;
+	font-family: SimSun, ZWAdobeF;
+	font-size: 29px;
+	height: 120px;
+}
+#RyanYunckDesc p {
+	margin: 0;
+	padding: 0;
+}
+#RyanYunckMusic {
+	float: left;
+}
+
+#TimidSoulDesc {
+	width: 38%;
+	float: right;
+	font-family: "OCR A Std", "Poplar Std", SimSun, ZWAdobeF;
+	text-shadow: 0px 2px #999999
+}
+
+#ASHODDesc {
+	float:right;
+	width: 38%;
+	font-family:"helvetica", sans-serif;
+}
+#ASHODDesc p { 
+	
+}
+#KarriemRigginsDesc {
+	float:right;
+	width: 38%;
+	font-family: "OCR A Std", "Plantagenet Cherokee", "Poplar Std", SimSun, ZWAdobeF;
+	font-size: 25px;
+	text-transform: uppercase; 
+	text-shadow: 2px 0 #95Cbdb;s
+}
+#DJShadowDesc {
+	float:right;
+	width: 39%;
+	font-family: "OCR A Std", "Plantagenet Cherokee", "Poplar Std", SimSun, ZWAdobeF;
+	font-size: 14px;
+	text-transform: uppercase; 	
+	margin: 0px 0 0 0;
+	padding: 0;
+	height: 120px;
+}
+#DJShadowDesc h2 {
+	margin: 10px 0 0 0;
+	text-shadow: -2px 0px #690
+}
+#MrCarmackDesc {
+	float:right;
+	width: 38%;
+	font-family: "Source Code Pro", "helvetica", sans-serif;
+	
+}
+#Flylo {
+	position: relative;	
+}
+#FlyingLotusDesc {
+	color: #000;
+	position: relative;
+	padding: 0 20px 0 20px;
+	font-family: "Lucida Console", Monaco, monospace;
+	margin: 0;
+	float: right;
+}
+#FlyingLotusDesc h2 {
+	Font-family: "Lucida Console", Monaco, monospace;
+}
+#CunninlynguistsDesc {
+	float: right;
+	width: 39%;
+	font-family: "Arial Black", Gadget, sans-serif;
+	padding: 2px 0 0 0;
+}
+#CunninlynguistsDesc h2 {
+	display: inline;
+	text-shadow: 1px 0px #C00;
+}
+#CunninlynguistsDesc p {
+	display: inline;
+}
+#CunninlynguistMusic {
+	float: left;
+}
+#EarlSweatshirtDesc {
+	margin: 0;
+	padding: 0;
+}
+#EarlSweatshirtDesc h2 {
+	display: inline;
+	font-family: "Source Code Pro", Sans-serif;
+	font-size: 48px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+#EarlSweatshirtDesc p {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-shadow: -0px -1px #DBA595;
+}
+#recent {
+	background: #95CBDB;
+	color: #DBA595;
+	font-family:"Source Code Pro", "Book Antiqua", Palatino, serif;
+	font-size: 36px;
+	padding: 0px 0 0 10px;
+	margin:0
+}
+#about {
+	color: #FFF;
+	position: absolute;
+	top: 100px;
+	padding: 0 20px 0 20px;
+	font-family: "Lucida Console", Monaco, monospace;
+	margin: 0;
+	text-align: justify;
+	width: 500px;
+	left: 300px;
+}
+#about a {
+	text-decoration: none;	
+	color: #FFF;
+}
+footer {
+	background: #95CBDB;
+	color: #DBA595;
+	padding: 0 10 0 10;
+	bottom: 0px;
+	position: relative;
+	width: 100%;
+}
+footer a {
+	color: #DBA595;
+	text-decoration: none;
+}
+footer h2 {
+	margin: 10px 0 0px 10px; 
+	display: inline-block;
+}
+footer h3 {
+	margin: 0px 0 0 10px;
+	display: inline-block;	
+}
+footer p {
+	margin: 0px 0 0 10px;
+	font-size: 10px;
+}
+iframe {
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {CAS110 Group 55
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media (max-width: 800px) {
+	#nav {
+        float: none;
+        width: auto;
+		position: inline;
+		text-size: 10px;
+		margin:80px 0 0 0;
+    }
+	#DillaDescription {
+		position: inherit;
+		width:98%;
+		color:#000;
+		font-family: "Lucida Console", Monaco, monospace;
+		margin: 0 0 0 10px;	
+		text-align: justify;	
+	}
+	#DillaDescriptionIndex {
+		position: inherit;
+		width:98%;
+		color:#000;
+		font-family: "Lucida Console", Monaco, monospace;
+		margin: 0 0 0 10px;	
+		text-align: justify;		
+	}
+	#ShigetoVideo {
+		height: 400px;
+    }
+	#ShigetoDesc p {
+		font-size: 12px;	
+	}
+	#DJShadowDesc p {
+		font-size: 10px;
+	}
+	#DJShadowDesc h2 {
+		font-size: 15px;	
+	}
+	#MegablownDesc {
+		position: relative;
+		width: 38%;
+		float: right;
+		font-family: "OCR A Std", "Plantagenet Cherokee", "Poplar Std", SimSun, ZWAdobeF
+	}
+	#MegablownDesc h2 {
+		padding: 0px;
+		margin: 0px;
+		text-shadow: 2px 2px #95CBDB;
+		font-size: 12px;
+	}
+	#MegablownDesc p {
+		font-size: 14px;
+		padding: 0px;
+		margin: 0px;
+		text-shadow: 2px 2px #DBA595;
+	}
+	#joonthemonsoonDesc p {
+		text-shadow: none;	
+	}
+	#ChromeSparks h2 {
+		font-size: 18px;
+	}
+	#ChromeSparks p {
+		font-size: 12px;	
+	}
+	#RyanYunckDesc p {
+		font-size: 12px;
+		padding: 10px;	
+	}
+	#TimidSoulDesc h2 {
+		font-size: 12px;
+	}
+	#KarriemRiggins p {
+		font-size: 12px;
+	}
+	#FlyingLotusDesc p {
+		float: none;
+		color: #000;
+		margin: 0;
+		padding: 0;
+	}
+	#FlyingLotusDesc {
+		float: none;
+		color: #000;
+		margin: 0;
+		padding: 0;
+	}
+	#FlyingLotusDesc {
+		color: #FFF;
+		top: auto;
+		font-family: "Lucida Console", Monaco, monospace;
+		margin: 0;
+		Display: none;
+	}
+	#FlyingLotusDesc h2 {
+		Font-family: "Lucida Console", Monaco, monospace;
+		color: #000;
+		float: none;
+		display: none;
+	}
+	body { 
+		margin: 0px 0px 0px 0px;
+		padding: 0;
+	}
+    #about {
+		display: inline;
+		float: none;
+		position: relative;
+		color: #DBA595;
+		margin: 0;
+		padding: 0 10px 0 10px;
+		top: auto;
+		font-family: "Lucida Console", Monaco, monospace;
+		text-align: justify;
+		width: 100%;
+		left: 0px;
+		background-color: #95CBDB;
+    } 
+	#about h1 {
+		Padding: 10px;
+		text-shadow: 2px 2px #000;
+	}
+
+	#about p {
+		padding: 30px;
+			text-shadow: 2px 2px #000;
+	}
+	#about h2{
+		Padding: 10px;
+			text-shadow: 2px 2px #000;
+	}
+	#about h3 {
+		padding: 30px;
+			text-shadow: 2px 2px #000;
+	}
+	#about ul {
+		padding: px;
+			text-shadow: 2px 2px #000;
+	}
+	
+	#Professional {
+        margin-top: 0px;
+        border: solid 3px #e3e3e3;
+        padding: 10px;  
+    }
+    #Contact {
+        margin-top: 0px;
+        border: solid 3px #e3e3e3;
+        padding: 0 10px 10px 10px;  
+        border-collapse: collapse;
+    }
+    .gallery {
+        float: none;
+    }
+    .gallery p {
+        padding: 0 0 10px 0;
+    }
+    .gallery img {
+        width: 500px;
+    }
+	footer {
+		display:relative;
+	}
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
